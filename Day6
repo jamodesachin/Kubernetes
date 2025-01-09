@@ -10,3 +10,5 @@ Below domains and all of its sub-domains are allowed to be referred in the exam
 https://kubernetes.io/docs
 https://kubernetes.io/blog/
 Kubernetes cheat sheet : https://kubernetes.io/docs/reference/kubectl/quick-reference/
+
+##kubectl config set-context kind-cka2 -- This is to set the context
