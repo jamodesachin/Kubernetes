@@ -6,6 +6,18 @@
 
 Helm is often referred to as the package manager for Kubernetes. It enables you to define, install, and manage even the most complex Kubernetes applications. Helm uses a packaging format called charts, which include all the resources needed to run an application, service, or a complete cloud-native stack inside Kubernetes.
 
+#### Why Helm-
+Kubernetes is a complex system with many moving parts (pods, deployments, services, etc.). Helm simplifies the process by packaging everything into reusable charts. It’s like having a one-click install for your entire application stack instead of manually creating each component.
+
+
+### **Components of a Chart:**
+
+* **Chart.yaml:** Metadata about the chart (name, version, etc.).
+* **values.yaml:** Default configuration values.
+* **templates/**: Directory containing Kubernetes manifests as templates.
+* **charts/**: Directory for chart dependencies.
+* **README.md:** Optional documentation.
+
 ##### How to Install helm in Ubuntu
 
 ```
