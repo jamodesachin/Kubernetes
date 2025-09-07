@@ -1,1 +1,72 @@
 My k8s knowledge base
+K8S Jobs - it runs and ends like patching, backup.
+
+
+
+
+1 # Kubernetes cluster cormands 
+2 $ kubectl cluster-info ----# Display cluster information
+3 $ kubectl get nodes -o wide # List all nodes in the cluster and show IPs
+
+5 # Kubernetes pod commands
+6 $ kubectl get pods  -- ---# List all pods.
+7 s kubectl get pods -o wide # Show detailed information about a pod. 
+8 $ kubectl get pods -l <Labetwe<valuem> --# Show pods who hawe a specific label.
+9 $ kubectl get pod <name> ---Show one specific pod 
+10 $ kubectl descrabe pod --# Show a pod's details. 
+11 $ kubectl logs <pod> --# View legs of a pod.
+12 $ kubectl exec -it <pod> # Execute a command inside a pod.
+13 $ kubectl delete pod <pod>
+$ kubectl explain pod <resource> --# Displays an overview of the Pod resource.
+15
+16 # Kubernetes deptoyrent cormands
+17 $ kubectl create deptoyment <mame> -- image =< image> ----># Create a deptoyment.
+18 $ kubectl get deployments   # List atl deploymeats.
+19 $ kubectl descrabe deployment <nane>---# Show deployment details of one deployment.
+20 $ kubectl scale deptoyment <mane> -- replicas =< number> --># Increase or decrease a deployment.
+21 $ kubectl rollout restart deployment/<nanes --> # Restart a deploynent.
+22 $ kubectl rollout status deployment/cnane> --># View the status of a deployment. 
+23 $ kubectl create deployment <mane> -- image =< image> -0 yaml --># Create a deptoynent and print the YANL.
+25 $ kubectl create deployment <mame> -imsge =< image>  -o yaml -- dry-run=client --># Create a deploynent without applying it
+27 $ kubectl create deployment mame> -- image =< images -o yaml -dry-rum=client > name.yaml --> Create a deptoyment without applying it and Store the YAML file inside "nase.yaml"
+30 # Kubernetes service cormards 
+31 $ kubectl get services --->
+32 $ kubectl describe service <nane
+33 $ kubectl expose pod <anp > ---->Expose a pod to a service.
+34 $ kubectl delete service crane> # Delete & service.
+35 $ kubectl port-forward <pod> <local-port>i<remote-port>  # Forward a tocal port to a pod.
+37 # Kubernetes configmap & secret comnands
+38 $ kubectl create configmap <mane> -from-literal= <key>a<value> ----> Create a ComfigMap
+40 $ kubectl create secret gereric <mane> -- from-literalm <key>=cvalue> --># Create a Secret.
+42 $ kubectl get configmaps  --->List att ComfigMaps.
+3 $ kubectl get secrets  --->List all Secrets.
+44 $ kubectl describe comfigmap <hene> ---> @ Show ConfigMap details.
+
+46 # Kubernetes nasespace cermnds
+47 $ kubectl get namespaces  # List all namespaces.
+48 $ kubectl create narespace <nane>--# Create a nanespace.
+49 $ kubectl delete narespace anes --> # Delete namespace
+50 $ kubectl config set-context -current-namespacem<name> ----># Apply a rescurce comfig file.
+51
+52 # Kubernetes resource conmands
+53 $ kubectl apply -f <file> 
+54 $ kubectl edit <type> <nane>
+SS $ kubectl delete -f <fitex
+56 $ kubectl get <type>
+57
+
+59 # Kubernetes statistics & evest comnands
+60 $ kubectl top nodes
+61 $ kubectl top pods
+$ kubectl events
+63 $ kubectl get events
+
+# Kubernetes permissicns
+65
+# and print the YAML file.
+# Create a deptoyment without applying it
+# and Store the YAML file inside "nase.yaml"
+
+s kubectl describe <type> <nane>
+
+$ kubectl get roles
