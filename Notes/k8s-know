@@ -70,3 +70,4 @@ $ kubectl events
 s kubectl describe <type> <nane>
 
 $ kubectl get roles
+docker exec -it<containerid> bash ---Go inside docker container
