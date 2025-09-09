@@ -152,3 +152,15 @@ kubectl delete pod <pod-name>
 
 ✅ In summary:
 kubectl delete pod → API Server → ETCD → Endpoint Controller → Remove from service/endpoints → Kubelet notified → PreStop Hook → SIGTERM → Graceful Shutdown → SIGKILL (if needed) → Pod Deleted.
+
+*****HSBC***
+cman, cross namespace, port and URL whitelisting, sqs and s3.
+
+Ingress- 
+Cloud Load Balancer is costly.1 service = 1 load balancer → costs can grow quickly if you have many microservices.
+Security.Ingress works with cert-manager or Google-managed certs to easily manage TLS.
+With Ingress → one GCLB can front many services (cheaper).
+Centralized Routing-Ingress supports host-based and path-based routing.
+K8S native-Ingress is defined/deployed with YAML inside the cluster.
+
+
