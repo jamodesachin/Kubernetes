@@ -162,7 +162,7 @@ Security.Ingress works with cert-manager or Google-managed certs to easily manag
 With Ingress → one GCLB can front many services (cheaper).
 Centralized Routing-Ingress supports host-based and path-based routing.
 K8S native-Ingress is defined/deployed with YAML inside the cluster.
-You have limitation of using cloud load balancer services. Can not use nginx,trafix, f5.
+You have limitation of using cloud load balancer services. Can not use nginx,trafix, f5. Also CLB onlt provides default round robin.
 Ingress yml written by devops engineer.
 Ingress controller is installed on cluster and controller reads ingress yml and it create load balacer as per config.
 
