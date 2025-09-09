@@ -163,7 +163,11 @@ With Ingress → one GCLB can front many services (cheaper).
 Centralized Routing-Ingress supports host-based and path-based routing.
 K8S native-Ingress is defined/deployed with YAML inside the cluster.
 You have limitation of using cloud load balancer services. Can not use nginx,trafix, f5. Also CLB onlt provides default round robin.
+
 Ingress yml written by devops engineer.
 Ingress controller is installed on cluster and controller reads ingress yml and it create load balacer as per config.
+
+First you installed ingress controller then it will watch for ingress resource and then it will convert into LB.
+Ingress controller is a go progrem written by load balancer companies.
 
 
